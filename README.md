@@ -38,7 +38,7 @@ CSCE2110-Project-1-/
 This downloads the project to your computer for the first time:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/CSCE2110-Project-1-.git
+git clone https://github.com/longngo2312/CSCE2110-Project-1-.git
 cd CSCE2110-Project-1-
 ```
 
