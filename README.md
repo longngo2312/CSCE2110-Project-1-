@@ -46,118 +46,77 @@ cd CSCE2110-Project-1-
 
 ---
 
-## Git Workflow Guide
+## Git Workflow (Required)
 
-### The Basics You Need to Know
+> **Rule: Nobody pushes directly to `main`.** All changes go through a Pull Request.
 
-#### Check the status of your files
+### Step-by-Step Workflow
+
+#### 1. Pull the latest `main` before starting work
 ```bash
-git status
-```
-This shows you what files have been changed, added, or are untracked.
-
-#### Pull the latest changes (DO THIS BEFORE YOU START WORKING)
-```bash
+git checkout main
 git pull origin main
 ```
-**Always pull before you start coding.** This grabs the latest code from GitHub so you don't run into conflicts.
 
-#### Stage your changes
-```bash
-# Add a specific file
-git add src/main.cpp
-
-# Add all changed files
-git add .
-```
-
-#### Commit your changes
-```bash
-git commit -m "Short description of what you changed"
-```
-Write meaningful commit messages. Examples:
-- `"Add linked list insert function"`
-- `"Fix segfault in delete operation"`
-- `"Add input parsing from file"`
-
-Bad examples:
-- `"stuff"`
-- `"fixed it"`
-- `"asdfgh"`
-
-#### Push your changes to GitHub
-```bash
-git push origin main
-```
-
----
-
-### Branching (Recommended Workflow)
-
-Branches let you work on features without breaking the main code.
-
-#### Create a new branch
+#### 2. Create a feature branch
 ```bash
 git checkout -b your-branch-name
 ```
-Name it something descriptive like `feature/linked-list` or `fix/memory-leak`.
+**Branch naming convention:**
+| Prefix | Use for | Example |
+|--------|---------|---------|
+| `feature/` | New functionality | `feature/linked-list` |
+| `fix/` | Bug fixes | `fix/memory-leak` |
+| `test/` | Adding tests | `test/insert-tests` |
+| `docs/` | Documentation | `docs/update-readme` |
 
-#### Switch between branches
+#### 3. Do your work — stage and commit often
 ```bash
-# Switch to an existing branch
-git checkout main
-git checkout your-branch-name
+git status                  # See what changed
+git add src/main.cpp        # Stage specific files (preferred)
+git commit -m "Add linked list insert function"
 ```
+Write meaningful commit messages:
+- Good: `"Add linked list insert function"`, `"Fix segfault in delete operation"`
+- Bad: `"stuff"`, `"fixed it"`, `"asdfgh"`
 
-#### Push your branch to GitHub
+#### 4. Push your branch to GitHub
 ```bash
-git push origin your-branch-name
+git push -u origin your-branch-name
 ```
+The `-u` flag links your local branch to the remote so future pushes only need `git push`.
 
-#### Merge your branch into main
-First, switch to main and pull the latest:
+#### 5. Open a Pull Request on GitHub
+1. Go to the repo: https://github.com/longngo2312/CSCE2110-Project-1-
+2. Click **"Compare & pull request"** (GitHub shows a banner after you push)
+3. Write a clear title and description of what you changed
+4. Request at least **1 teammate** as a reviewer
+5. Wait for approval, then click **"Merge pull request"**
+6. Delete the remote branch when prompted
+
+#### 6. Clean up after merge
 ```bash
 git checkout main
 git pull origin main
-```
-Then merge your branch:
-```bash
-git merge your-branch-name
-```
-Then push:
-```bash
-git push origin main
-```
-
-#### Delete a branch after merging
-```bash
-# Delete locally
-git branch -d your-branch-name
-
-# Delete on GitHub
-git push origin --delete your-branch-name
+git branch -d your-branch-name          # Delete local branch
 ```
 
 ---
 
-### Pull Requests (PR) - The Safest Way to Merge
+### Keeping Your Branch Up to Date
 
-Instead of merging directly, use Pull Requests on GitHub. This lets the team review code before it goes into main.
-
-**Steps:**
-1. Push your branch to GitHub: `git push origin your-branch-name`
-2. Go to the repo on GitHub
-3. Click **"Compare & pull request"** (GitHub usually shows a banner)
-4. Write a title and description of what you changed
-5. Assign a teammate to review
-6. Once approved, click **"Merge pull request"**
+If `main` has been updated while you're working on your branch:
+```bash
+git checkout your-branch-name
+git pull origin main
+```
+Resolve any conflicts, then commit and push.
 
 ---
 
 ### Handling Merge Conflicts
 
-If two people edit the same lines, Git will flag a conflict. You'll see something like:
-
+If two people edit the same lines, Git will flag a conflict:
 ```
 <<<<<<< HEAD
 your code
@@ -207,30 +166,40 @@ make run      # Build and run (if configured)
 | `git clone <url>` | Download the repo for the first time |
 | `git status` | See what files changed |
 | `git pull origin main` | Get latest changes from GitHub |
-| `git add .` | Stage all changes |
 | `git add <file>` | Stage a specific file |
 | `git commit -m "msg"` | Save changes with a message |
-| `git push origin main` | Upload commits to GitHub |
-| `git checkout -b <name>` | Create and switch to a new branch |
+| `git checkout -b <name>` | Create a new branch and switch to it |
 | `git checkout <name>` | Switch to an existing branch |
-| `git merge <branch>` | Merge a branch into current branch |
+| `git push -u origin <branch>` | Push your branch to GitHub |
+| `git pull origin main` | Update your branch with latest main |
+| `git branch -d <name>` | Delete a local branch after merge |
 | `git log --oneline` | See commit history (compact) |
 | `git diff` | See unstaged changes |
-| `git stash` | Temporarily save uncommitted changes |
-| `git stash pop` | Restore stashed changes |
+| `git stash` / `git stash pop` | Temporarily save/restore uncommitted work |
 
 ---
 
-## Team Rules (Fill these in together)
-- [ ] How often do we push/pull? (e.g., at least once a day)
-- [ ] Do we use branches or push straight to main?
-- [ ] Who reviews pull requests?
-- [ ] How do we split up the work?
-
----
-
-## Notes
+## Team Rules
+- **Always** work on a branch — never commit directly to `main`
+- **Always** pull `main` before creating a new branch
+- **Always** open a Pull Request to merge into `main`
+- **At least 1 reviewer** must approve before merging
 - **Never** push `.exe`, `.o`, or other compiled files (`.gitignore` handles this)
-- **Always** pull before you start working
 - **Communicate** if you're working on the same file as someone else
-- When in doubt, make a branch
+
+---
+
+## Setting Up Branch Protection (Repo Owner)
+
+To enforce this workflow, the repo owner should enable branch protection on GitHub:
+
+1. Go to **Settings → Branches** in the GitHub repo
+2. Click **Add branch ruleset** (or "Add rule" for classic protection)
+3. Set **Branch name pattern** to `main`
+4. Enable these settings:
+   - **Require a pull request before merging**
+   - **Require approvals** (set to 1)
+   - **Do not allow bypassing the above settings** (optional but recommended)
+5. Click **Create** / **Save changes**
+
+This prevents anyone (including the owner) from pushing directly to `main`.
