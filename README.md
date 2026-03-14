@@ -38,11 +38,9 @@ CSCE2110-Project-1-/
 This downloads the project to your computer for the first time:
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/CSCE2110-Project-1-.git
+git clone https://github.com/longngo2312/CSCE2110-Project-1-.git
 cd CSCE2110-Project-1-
 ```
-
-> Replace `YOUR-USERNAME` with the actual GitHub username of the repo owner.
 
 ---
 
@@ -189,17 +187,15 @@ make run      # Build and run (if configured)
 
 ---
 
-## Setting Up Branch Protection (Repo Owner)
+## Branch Protection (Active)
 
-To enforce this workflow, the repo owner should enable branch protection on GitHub:
+The `main` branch is protected with the following rules:
 
-1. Go to **Settings → Branches** in the GitHub repo
-2. Click **Add branch ruleset** (or "Add rule" for classic protection)
-3. Set **Branch name pattern** to `main`
-4. Enable these settings:
-   - **Require a pull request before merging**
-   - **Require approvals** (set to 1)
-   - **Do not allow bypassing the above settings** (optional but recommended)
-5. Click **Create** / **Save changes**
+| Rule | Status |
+|------|--------|
+| Require pull request before merging | Enabled |
+| Require 1 approval before merging | Enabled |
+| Dismiss stale reviews on new pushes | Enabled |
+| No bypass for anyone (including owner) | Enabled |
 
-This prevents anyone (including the owner) from pushing directly to `main`.
+No one can push directly to `main`. All changes must go through a Pull Request with at least 1 approval.

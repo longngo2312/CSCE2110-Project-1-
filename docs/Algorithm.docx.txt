@@ -1,0 +1,123 @@
+﻿CSCE 2110 Project 1 Algorithm:
+
+
+1. Start Program
+1. Initialize the program.
+2. Create a DriverDatabase object.
+3. Inside the database constructor:
+   * Initialize activeDrivers as an empty DriverList.
+   * Initialize inactiveDrivers as an empty DriverList.
+   * Initialize the table as a HashTable of the given size.
+4. Read Driver data into DriveDatabase (excel or json file)
+   * Open file, read each line 
+   * For each record:
+      1. Determine categories (Student, Government employee, self-employed, business owner, private employee)
+      2. Create appropriate object (derived from base)
+      3. Set appropriate information for driver object (id, name, dob, license date, address, experience, medical condition, ticket, etc)
+   * activeDrivers.insertAtEnd(driver)
+   * table.insert(driver) 
+
+
+2. Display Main Menu (loop)
+1. Show user options:
+   * Add a new driver
+   * Search for a driver by (criteria)
+   * Insert the driver after a specific driver
+   * Move driver to inactive database
+   * Display active or inactive drivers
+   * Display n oldest/newest drivers by licenseIssueDate
+   * Exit program
+2. Read user choice 
+3. Use a loop to handle option and redisplay menu 
+3. Add a New Driver
+1. Ask the user for driver type:
+   * StudentDriver
+   * GovernmentDriver
+   * PrivateEmployeeDriver
+   * SelfEmployedDriver
+   * BusinessOwnerDriver
+2. Create the correct object based on the selection.
+3. Prompt user for:
+   * License ID
+   * Name
+   * DOB  (Date)
+   * License issue date (Date)
+   * Address (street, city, county )
+   * Experience years
+4. Prompt user for medical condition
+   * Fit 
+   * Vision impaired 
+   * Upper extremity impairment 
+   * Locomotor disability 
+   * Map choice to MedicalCondition enum and store
+5. Ask if the driver has a ticket:
+   * Initialize a flag hasTicket= false
+   * If yes:
+      * Ask for ticket issue date (Date)
+      * Ask for ticket location
+      * Create a ticket and attach it to the driver
+      * hasTicket=True
+   * If no:
+      * continue
+6. Set all attributes using setters or constructor
+7. Insert driver into:
+   * activeDrivers.insertAtEnd(driver)
+   * table.insert(driver) 
+8. Return to menu
+4. Search for a Driver
+1. Ask the user for the license ID.
+2. Call table.search(id):
+   * If found -> display driver info.
+   * If not found -> print “Driver not found.”
+3. Return to menu
+5. Insert After a Value (by criteria)
+1. Ask the user for criteria:
+   * Name (string)
+   * License ID (int)
+   * County
+2. Ask the user for the new driver to insert.
+3. Call the correct overloaded method:
+   * insertAfterValue(string criteria, string value)
+   * insertAfterValue(string criteria, int value)
+4. If the criteria are found -> insert a new driver node after it.
+5. If not found -> notify user. 
+   * Cout<<” Error: User not found.”<<endl;
+6. Return to menu
+6. Move Driver to Inactive List
+1. Ask the user for the license ID.
+2. Search for the driver in the active list.
+3. If found:
+   * Remove from active list.
+   * Insert into inactive list.
+4. Update the hash table.
+5. Return to menu
+7. Display Drivers
+1. If the user selects “Active Drivers”:
+   * Traverse activeDrivers and print each driver.
+2. If the user selects “Inactive Drivers”:
+   * Traverse inactiveDrivers and print each driver.
+3. Return to menu
+
+
+8. Display “n” new/old drivers by licenseIssueDate
+   1. If the user selects “Display n oldest drivers.”
+      * Create temp drivelist list (dynamic array)
+      * Sort temp driveList by licenseIssueDate in descending order
+      * Ask the user to give the value of n
+      * Check if n is larger than the list
+      * Display the first n drivers from the sorted list
+
+
+   2. If the user selects “Display n newest drivers.”
+      * Create temp drivelist list (array or vector)
+      * Sort temp driveList by licenseIssueDate in ascending order
+      * Ask the user to give the value of n
+      * Check if n is larger than the list
+      * Display the first n drivers from the sorted list
+
+
+
+
+9. Exit Program
+1. Free any dynamic memory
+2. End program

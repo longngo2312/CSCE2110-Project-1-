@@ -1,0 +1,139 @@
+﻿Driver Class Diagram Design
+Class: Date
+Attributes
+	Methods
+	day : int
+	Date()
+	month : int
+	Date(int d,int m,int y)
+	year : int
+	
+
+	Class: Address
+Attributes
+	Methods
+	street : string
+	Address()
+	city : string
+	Address(string,string,string)
+	county : string
+	
+
+	Class: Ticket
+Attributes
+	Methods
+	issueDate : Date
+	Ticket()
+	location : string
+	Ticket(Date,string)
+	Class: Driver (Base Class)
+Attributes
+	Methods
+	licenseID : int
+	setLicenseID(int)
+	name : string
+	getLicenseID()
+	dob : Date
+	setName(string)
+	licenseIssueDate : Date
+	setDOB(Date)
+	address : Address
+	setAddress(Address)
+	experienceYears : int
+	setExperience(int)
+	hasTicket : bool
+	setLicenseDate(Date)
+	ticket : Ticket
+	getLicenseDate()
+	
+
+	setTicket(Ticket)
+	
+
+	getWorkType()
+	Class: StudentDriver (inherits Driver)
+Attributes
+	Methods
+	university : string
+	setUniversity(string)
+	
+
+	getWorkType()
+	Class: GovernmentDriver (inherits Driver)
+Attributes
+	Methods
+	department : string
+	setDepartment(string)
+	
+
+	getWorkType()
+	Class: PrivateEmployeeDriver (inherits Driver)
+Attributes
+	Methods
+	company : string
+	setCompany(string)
+	
+
+	getWorkType()
+	Class: Node
+Attributes
+	Methods
+	data : Driver*
+	Node(Driver*)
+	next : Node*
+	
+
+	Class: DriverList
+Attributes
+	Methods
+	head : Node*
+	insertAtHead(Driver*)
+	
+
+	insertAtEnd(Driver*)
+	
+
+	search(int id)
+	
+
+	InsertAfterValue(string criteria, string)
+	
+
+	insertAfterValue(String criteria , int )
+	Class: HashTable
+Attributes
+	Methods
+	table : Node**
+	HashTable(int)
+	size : int
+	hash(int)
+	
+
+	insert(Driver*)
+	
+
+	search(int)
+	Class: DriverDatabase
+Attributes
+	Methods
+	activeDrivers : DriverList
+	addDriver(Driver*)
+	inactiveDrivers : DriverList
+	findDriver(int)
+	table : HashTable
+	
+
+	Relationships
+Inheritance:
+StudentDriver -> Driver
+GovernmentDriver -> Driver
+PrivateEmployeeDriver -> Driver
+
+Composition:
+Driver HAS-A Date (dob)
+Driver HAS-A Date (licenseIssueDate)
+Driver HAS-A Address
+Driver HAS-A Ticket
+
+Database Structure:
+DriverDatabase contains DriverList (active), DriverList (inactive), and HashTable for fast lookup.
