@@ -1,8 +1,8 @@
+#ifndef TICKET_H
+#define TICKET_H
 #include <iostream>
 #include <string>
 #include "date.h"
-#ifndef TICKET_H
-#define TICKET_H
 using namespace std;
 
 class Ticket {

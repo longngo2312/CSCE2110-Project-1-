@@ -1,7 +1,7 @@
-#include <iostream>
-#include <string>
 #ifndef ADDRESS_H
 #define ADDRESS_H
+#include <iostream>
+#include <string>
 using namespace std;
 
 class Address {

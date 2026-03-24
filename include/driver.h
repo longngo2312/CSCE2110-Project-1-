@@ -1,9 +1,9 @@
+#ifndef DRIVER_H
+#define DRIVER_H
 #include <iostream>
 #include "date.h"
 #include "address.h"
 #include "ticket.h"
-#ifndef DRIVER_H
-#define DRIVER_H
 using namespace std;
 
 class Driver {
@@ -23,7 +23,6 @@ public:
 	Date getLicenseDate();
 	string getWorkType();
 
-
 private:
 	// Variables //
 	int licenseID;
@@ -38,4 +37,3 @@ private:
 };
 
 #endif
-
