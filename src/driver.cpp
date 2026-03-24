@@ -1,5 +1,5 @@
 #include <iostream>
-#include "driver.h"
+#include "driver.hpp"
 using namespace std;
 
 // Setters //
@@ -28,15 +28,20 @@ void Driver::setTicket(Ticket ticket) {
 void Driver::setWorkType(string workType) {
 	this->workType = workType;
 }
+void Driver::setMedicalCondition(MedicalCondition condition) {
+	this->medicalCondition = condition;
+}
 
 // Getters //
 int Driver::getLicenseID() {
 	return licenseID;
 }
-
 Date Driver::getLicenseDate() {
 	return licenseIssueDate;
 }
 string Driver::getWorkType() {
 	return workType;
+}
+MedicalCondition Driver::getMedicalCondition() {
+	return medicalCondition;
 }

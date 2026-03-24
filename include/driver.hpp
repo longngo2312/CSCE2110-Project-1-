@@ -1,9 +1,10 @@
-#ifndef DRIVER_H
-#define DRIVER_H
+#ifndef DRIVER_HPP
+#define DRIVER_HPP
 #include <iostream>
-#include "date.h"
-#include "address.h"
-#include "ticket.h"
+#include "date.hpp"
+#include "address.hpp"
+#include "ticket.hpp"
+#include "MedicalCondition.hpp"
 using namespace std;
 
 class Driver {
@@ -17,11 +18,13 @@ public:
 	void setLicenseDate(Date licenseIssueDate);
 	void setTicket(Ticket ticket);
 	void setWorkType(string workType);
+	void setMedicalCondition(MedicalCondition condition);
 
 	// Getters //
 	int getLicenseID();
 	Date getLicenseDate();
 	string getWorkType();
+	MedicalCondition getMedicalCondition();
 
 private:
 	// Variables //
@@ -34,6 +37,7 @@ private:
 	bool hasTicket;
 	Ticket ticket;
 	string workType;
+	MedicalCondition medicalCondition;
 };
 
 #endif

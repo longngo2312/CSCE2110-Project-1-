@@ -1,5 +1,5 @@
-#ifndef ADDRESS_H
-#define ADDRESS_H
+#ifndef ADDRESS_HPP
+#define ADDRESS_HPP
 #include <iostream>
 #include <string>
 using namespace std;

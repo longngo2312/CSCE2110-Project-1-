@@ -1,7 +1,7 @@
-#ifndef GOVERNMENTDRIVER_H
-#define GOVERNMENTDRIVER_H
+#ifndef GOVERNMENTDRIVER_HPP
+#define GOVERNMENTDRIVER_HPP
 #include <iostream>
-#include "driver.h"
+#include "driver.hpp"
 using namespace std;
 
 class GovernmentDriver : public Driver {

@@ -1,7 +1,7 @@
-#ifndef STUDENTDRIVER_H
-#define STUDENTDRIVER_H
+#ifndef STUDENTDRIVER_HPP
+#define STUDENTDRIVER_HPP
 #include <iostream>
-#include "driver.h"
+#include "driver.hpp"
 using namespace std;
 
 class StudentDriver : public Driver {

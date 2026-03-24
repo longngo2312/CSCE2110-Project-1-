@@ -1,7 +1,7 @@
-#ifndef PRIVATEEMPLOYEEDRIVER_H
-#define PRIVATEEMPLOYEEDRIVER_H
+#ifndef PRIVATEEMPLOYEEDRIVER_HPP
+#define PRIVATEEMPLOYEEDRIVER_HPP
 #include <iostream>
-#include "driver.h"
+#include "driver.hpp"
 using namespace std;
 
 class PrivateEmployeeDriver : public Driver {

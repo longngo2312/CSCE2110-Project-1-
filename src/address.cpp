@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
-#include "address.h"
+#include "address.hpp"
 using namespace std;
 
 Address::Address() {}
 
-// Constructor With Date Input //
+// Constructor With Address Info Input //
 Address::Address(string street, string city, string county) {
 	this->street = street;
 	this->city = city;
