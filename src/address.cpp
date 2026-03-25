@@ -11,3 +11,14 @@ Address::Address(string street, string city, string county) {
 	this->city = city;
 	this->county = county;
 }
+
+// Getters //
+string Address::getStreet() {
+	return street;
+}
+string Address::getCity() {
+	return city;
+}
+string Address::getCounty() {
+	return county;
+}

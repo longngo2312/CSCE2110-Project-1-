@@ -2,6 +2,13 @@
 #include "driver.hpp"
 using namespace std;
 
+Driver::Driver() {
+	licenseID = 0;
+	experienceYears = 0;
+	hasTicket = false;
+	medicalCondition = MedicalCondition::Fit;
+}
+
 // Setters //
 void Driver::setLicenseID(int id) {
 	this->licenseID = id;
@@ -36,8 +43,26 @@ void Driver::setMedicalCondition(MedicalCondition condition) {
 int Driver::getLicenseID() {
 	return licenseID;
 }
+string Driver::getName() {
+	return name;
+}
+Date Driver::getDOB() {
+	return dob;
+}
 Date Driver::getLicenseDate() {
 	return licenseIssueDate;
+}
+Address Driver::getAddress() {
+	return address;
+}
+int Driver::getExperience() {
+	return experienceYears;
+}
+bool Driver::getHasTicket() {
+	return hasTicket;
+}
+Ticket Driver::getTicket() {
+	return ticket;
 }
 string Driver::getWorkType() {
 	return workType;

@@ -10,6 +10,11 @@ public:
 	Ticket();
 	// Constructor With Ticket Info Input //
 	Ticket(Date issueDate, string location);
+
+	// Getters //
+	Date getIssueDate();
+	string getLocation();
+
 private:
 	// Ticket Variables //
 	Date issueDate;

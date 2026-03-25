@@ -8,6 +8,12 @@ public:
 	Date();
 	// Constructor With Date Input //
 	Date(int d, int m, int y);
+
+	// Getters //
+	int getDay();
+	int getMonth();
+	int getYear();
+
 private:
 	// Date Variables //
 	int day;

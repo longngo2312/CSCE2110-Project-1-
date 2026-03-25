@@ -1,6 +1,5 @@
 #ifndef DRIVER_HPP
 #define DRIVER_HPP
-#include <iostream>
 #include "date.hpp"
 #include "address.hpp"
 #include "ticket.hpp"
@@ -9,6 +8,8 @@ using namespace std;
 
 class Driver {
 public:
+	Driver();
+
 	// Setters //
 	void setLicenseID(int id);
 	void setName(string name);
@@ -22,7 +23,13 @@ public:
 
 	// Getters //
 	int getLicenseID();
+	string getName();
+	Date getDOB();
 	Date getLicenseDate();
+	Address getAddress();
+	int getExperience();
+	bool getHasTicket();
+	Ticket getTicket();
 	string getWorkType();
 	MedicalCondition getMedicalCondition();
 
