@@ -1,15 +1,20 @@
+#ifndef TICKET_HPP
+#define TICKET_HPP
 #include <iostream>
 #include <string>
-#include "date.h"
-#ifndef TICKET_H
-#define TICKET_H
+#include "date.hpp"
 using namespace std;
 
 class Ticket {
 public:
 	Ticket();
-	// Constructor With Address Info Input //
+	// Constructor With Ticket Info Input //
 	Ticket(Date issueDate, string location);
+
+	// Getters //
+	Date getIssueDate();
+	string getLocation();
+
 private:
 	// Ticket Variables //
 	Date issueDate;

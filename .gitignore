@@ -57,3 +57,7 @@ Thumbs.db
 
 #claude
 .claude
+
+
+#compliler extension
+compile_flags.txt
