@@ -1,0 +1,102 @@
+10001,James Carter,03 12 1985,04 15 2010,101 Oak St,Denton,Denton County,12,0,Student,UNT
+10002,Sarah Mitchell,07 22 1992,08 10 2015,202 Pine St,Denton,Denton County,8,1,Student,UNT
+10003,Michael Johnson,11 05 1988,12 01 2012,303 Maple St,Denton,Denton County,10,0,Student,UNT
+10004,Emily Davis,02 14 1995,03 20 2018,404 Cedar St,Denton,Denton County,5,0,Student,UNT
+10005,Daniel Thompson,09 30 1990,10 25 2013,505 Elm St,Denton,Denton County,9,1,Student,UNT
+10006,Ashley Brown,05 18 1993,06 22 2016,606 Birch St,Denton,Denton County,7,0,Student,UNT
+10007,Christopher Wilson,01 27 1987,02 18 2011,707 Walnut St,Denton,Denton County,11,0,Student,UNT
+10008,Olivia Martinez,08 09 1994,09 12 2017,808 Hickory St,Denton,Denton County,6,1,Student,UNT
+10009,Matthew Anderson,12 03 1989,01 10 2014,909 Spruce St,Denton,Denton County,9,0,Student,UNT
+10010,Grace Taylor,04 21 1996,05 30 2019,111 Ash St,Denton,Denton County,4,0,Student,UNT
+10011,Joshua Moore,06 11 1991,07 15 2014,222 Oak St,Denton,Denton County,9,1,Student,UNT
+10012,Victoria Lee,10 28 1993,11 20 2016,333 Pine St,Denton,Denton County,7,0,Student,UNT
+10013,Andrew White,03 07 1986,04 05 2010,444 Maple St,Denton,Denton County,12,0,Student,UNT
+10014,Chloe Harris,09 19 1995,10 10 2018,555 Cedar St,Denton,Denton County,5,1,Student,UNT
+10015,Brandon Clark,11 14 1988,12 18 2012,666 Elm St,Denton,Denton County,10,0,Student,UNT
+10016,Sophia Lewis,07 03 1994,08 08 2017,777 Birch St,Denton,Denton County,6,0,Student,UNT
+10017,Justin Walker,02 25 1992,03 30 2015,888 Walnut St,Denton,Denton County,8,1,Student,UNT
+10018,Hailey Young,05 09 1996,06 14 2019,999 Hickory St,Denton,Denton County,4,0,Student,UNT
+10019,Kevin Hall,01 16 1990,02 20 2013,121 Spruce St,Denton,Denton County,10,0,Student,UNT
+10020,Isabella King,08 27 1993,09 29 2016,232 Ash St,Denton,Denton County,7,1,Student,UNT
+10021,Jacob Wright,12 19 1987,01 22 2011,343 Oak St,Denton,Denton County,11,0,Student,UNT
+10022,Madison Scott,04 04 1995,05 12 2018,454 Pine St,Denton,Denton County,5,0,Student,UNT
+10023,Tyler Green,06 29 1991,07 30 2014,565 Maple St,Denton,Denton County,9,1,Student,UNT
+10024,Abigail Adams,10 13 1994,11 25 2017,676 Cedar St,Denton,Denton County,6,0,Student,UNT
+10025,Logan Baker,03 02 1989,04 08 2013,787 Elm St,Denton,Denton County,10,0,Student,UNT
+10026,Natalie Nelson,09 23 1996,10 27 2019,898 Birch St,Denton,Denton County,4,1,Student,UNT
+10027,Jonathan Hill,11 30 1988,12 15 2012,909 Walnut St,Denton,Denton County,10,0,Student,UNT
+10028,Lily Ramirez,07 17 1993,08 20 2016,112 Hickory St,Denton,Denton County,7,0,Student,UNT
+10029,Patrick Campbell,02 08 1991,03 14 2014,223 Spruce St,Denton,Denton County,8,1,Student,UNT
+10030,Zoe Mitchell,05 26 1995,06 29 2018,334 Ash St,Denton,Denton County,5,0,Student,UNT
+10031,Henry Roberts,01 05 1987,02 10 2011,445 Oak St,Denton,Denton County,11,0,Student,UNT
+10032,Samantha Perez,08 14 1994,09 18 2017,556 Pine St,Denton,Denton County,6,1,Student,UNT
+10033,Connor Turner,12 22 1989,01 28 2014,667 Maple St,Denton,Denton County,9,0,Student,UNT
+10034,Aria Phillips,04 19 1996,05 23 2019,778 Cedar St,Denton,Denton County,4,0,Student,UNT
+10035,Evan Parker,06 07 1992,07 11 2015,889 Elm St,Denton,Denton County,8,1,Student,UNT
+10036,Claire Evans,10 31 1993,11 30 2016,990 Birch St,Denton,Denton County,7,0,Student,UNT
+10037,Sean Edwards,03 15 1988,04 20 2012,111 Walnut St,Denton,Denton County,10,0,Student,UNT
+10038,Anna Collins,09 08 1995,10 12 2018,222 Hickory St,Denton,Denton County,5,1,Student,UNT
+10039,Blake Stewart,11 27 1990,12 29 2013,333 Spruce St,Denton,Denton County,9,0,Student,UNT
+10040,Julia Morris,07 01 1994,08 05 2017,444 Ash St,Denton,Denton County,6,0,Student,UNT
+
+10041,Robert Hughes,02 10 1980,03 15 2005,101 Oak St,Dallas,Dallas County,20,0,Government,Transportation Dept
+10042,Laura Foster,06 18 1983,07 22 2007,202 Pine St,Dallas,Dallas County,18,1,Government,Health Dept
+10043,Steven Reed,09 25 1979,10 30 2004,303 Maple St,Dallas,Dallas County,21,0,Government,Water Dept
+10044,Angela Simmons,12 14 1984,01 19 2008,404 Cedar St,Dallas,Dallas County,17,0,Government,Education Dept
+10045,Mark Patterson,04 03 1981,05 08 2006,505 Elm St,Dallas,Dallas County,19,1,Government,Fire Dept
+10046,Karen Russell,08 29 1982,09 27 2007,606 Birch St,Dallas,Dallas County,18,0,Government,Police Dept
+10047,Jason Griffin,11 11 1978,12 20 2003,707 Walnut St,Dallas,Dallas County,22,0,Government,Transportation Dept
+10048,Rebecca Hayes,03 06 1985,04 10 2009,808 Hickory St,Dallas,Dallas County,16,1,Government,Health Dept
+10049,Timothy Bryant,07 24 1980,08 28 2005,909 Spruce St,Dallas,Dallas County,20,0,Government,Water Dept
+10050,Michelle Rivera,10 02 1983,11 12 2007,111 Ash St,Dallas,Dallas County,18,0,Government,Education Dept
+10051,Eric Cox,01 19 1979,02 25 2004,222 Oak St,Dallas,Dallas County,21,1,Government,Fire Dept
+10052,Vanessa Ward,05 30 1984,06 18 2008,333 Pine St,Dallas,Dallas County,17,0,Government,Police Dept
+10053,Gregory Torres,09 09 1981,10 14 2006,444 Maple St,Dallas,Dallas County,19,0,Government,Transportation Dept
+10054,Stephanie Peterson,12 28 1982,01 31 2007,555 Cedar St,Dallas,Dallas County,18,1,Government,Health Dept
+10055,Phillip Gray,03 22 1978,04 27 2003,666 Elm St,Dallas,Dallas County,22,0,Government,Water Dept
+10056,Erin Ramirez,07 16 1985,08 21 2009,777 Birch St,Dallas,Dallas County,16,0,Government,Education Dept
+10057,Adam James,11 04 1980,12 09 2005,888 Walnut St,Dallas,Dallas County,20,1,Government,Fire Dept
+10058,Monica Brooks,02 13 1983,03 17 2007,999 Hickory St,Dallas,Dallas County,18,0,Government,Police Dept
+10059,Shawn Kelly,06 26 1979,07 30 2004,121 Spruce St,Dallas,Dallas County,21,0,Government,Transportation Dept
+10060,Paige Howard,10 15 1984,11 22 2008,232 Ash St,Dallas,Dallas County,17,1,Government,Health Dept
+10061,Clinton Barnes,01 08 1981,02 14 2006,343 Oak St,Dallas,Dallas County,19,0,Government,Water Dept
+10062,Melanie Stone,05 19 1982,06 25 2007,454 Pine St,Dallas,Dallas County,18,0,Government,Education Dept
+10063,Harold Dunn,09 01 1978,10 06 2003,565 Maple St,Dallas,Dallas County,22,1,Government,Fire Dept
+10064,Christina Lowe,12 20 1985,01 28 2010,676 Cedar St,Dallas,Dallas County,15,0,Government,Police Dept
+10065,Franklin Bishop,03 11 1980,04 18 2005,787 Elm St,Dallas,Dallas County,20,0,Government,Transportation Dept
+10066,Allison Holt,07 07 1983,08 12 2007,898 Birch St,Dallas,Dallas County,18,1,Government,Health Dept
+10067,Marcus Fleming,11 29 1979,12 31 2004,909 Walnut St,Dallas,Dallas County,21,0,Government,Water Dept
+10068,Danielle Norton,02 02 1984,03 09 2008,112 Hickory St,Dallas,Dallas County,17,0,Government,Education Dept
+10069,Jeffrey Bowen,06 14 1981,07 19 2006,223 Spruce St,Dallas,Dallas County,19,1,Government,Fire Dept
+10070,Heather Pratt,10 23 1982,11 27 2007,334 Ash St,Dallas,Dallas County,18,0,Government,Police Dept
+
+10071,Travis Morgan,03 09 1986,04 14 2010,101 Oak St,Fort Worth,Tarrant County,12,0,PrivateEmployee,Amazon
+10072,Katie Barrett,07 28 1989,08 30 2013,202 Pine St,Fort Worth,Tarrant County,9,1,PrivateEmployee,Target
+10073,Jordan Blake,11 17 1984,12 22 2008,303 Maple St,Fort Worth,Tarrant County,15,0,PrivateEmployee,Walmart
+10074,Erica Vaughn,02 06 1991,03 12 2015,404 Cedar St,Fort Worth,Tarrant County,8,0,PrivateEmployee,Kroger
+10075,Shane Douglas,09 25 1987,10 29 2011,505 Elm St,Fort Worth,Tarrant County,11,1,PrivateEmployee,UPS
+10076,Marissa Boyd,05 14 1990,06 20 2014,606 Birch St,Fort Worth,Tarrant County,9,0,PrivateEmployee,Amazon
+10077,Colin Barrett,01 31 1985,02 27 2009,707 Walnut St,Fort Worth,Tarrant County,14,0,PrivateEmployee,Target
+10078,Faith Harmon,08 19 1992,09 23 2016,808 Hickory St,Fort Worth,Tarrant County,6,1,PrivateEmployee,Walmart
+10079,Garrett Lowe,12 08 1988,01 15 2013,909 Spruce St,Fort Worth,Tarrant County,10,0,PrivateEmployee,Kroger
+10080,Rebecca Neal,04 27 1993,05 30 2017,111 Ash St,Fort Worth,Tarrant County,6,0,PrivateEmployee,UPS
+10081,Mitchell Cain,06 10 1986,07 18 2010,222 Oak St,Fort Worth,Tarrant County,12,1,PrivateEmployee,Amazon
+10082,Autumn Briggs,10 04 1991,11 09 2015,333 Pine St,Fort Worth,Tarrant County,8,0,PrivateEmployee,Target
+10083,Spencer Holt,03 21 1987,04 26 2011,444 Maple St,Fort Worth,Tarrant County,11,0,PrivateEmployee,Walmart
+10084,Kayla Monroe,09 12 1994,10 20 2018,555 Cedar St,Fort Worth,Tarrant County,5,1,PrivateEmployee,Kroger
+10085,Devin Rhodes,11 30 1988,12 28 2012,666 Elm St,Fort Worth,Tarrant County,10,0,PrivateEmployee,UPS
+10086,Miranda Tate,07 02 1993,08 08 2017,777 Birch St,Fort Worth,Tarrant County,6,0,PrivateEmployee,Amazon
+10087,Corey Benson,02 18 1986,03 25 2010,888 Walnut St,Fort Worth,Tarrant County,12,1,PrivateEmployee,Target
+10088,Elena Sharp,05 23 1992,06 29 2016,999 Hickory St,Fort Worth,Tarrant County,7,0,PrivateEmployee,Walmart
+10089,Grant Foster,01 09 1989,02 14 2013,121 Spruce St,Fort Worth,Tarrant County,10,0,PrivateEmployee,Kroger
+10090,Naomi Walters,08 31 1994,09 27 2018,232 Ash St,Fort Worth,Tarrant County,5,1,PrivateEmployee,UPS
+10091,Shawn Pierce,12 26 1987,01 30 2012,343 Oak St,Fort Worth,Tarrant County,11,0,PrivateEmployee,Amazon
+10092,Elise Harmon,04 15 1991,05 19 2015,454 Pine St,Fort Worth,Tarrant County,8,0,PrivateEmployee,Target
+10093,Tyson McCall,06 06 1986,07 11 2010,565 Maple St,Fort Worth,Tarrant County,12,1,PrivateEmployee,Walmart
+10094,Marina Doyle,10 29 1993,11 30 2017,676 Cedar St,Fort Worth,Tarrant County,6,0,PrivateEmployee,Kroger
+10095,Victor Hayes,03 03 1988,04 09 2012,787 Elm St,Fort Worth,Tarrant County,10,0,PrivateEmployee,UPS
+10096,Delaney Cross,09 20 1994,10 25 2018,898 Birch St,Fort Worth,Tarrant County,5,1,PrivateEmployee,Amazon
+10097,Harper Sloan,11 11 1989,12 17 2013,909 Walnut St,Fort Worth,Tarrant County,9,0,PrivateEmployee,Target
+10098,Reid Chandler,07 07 1986,08 10 2010,112 Hickory St,Fort Worth,Tarrant County,12,0,PrivateEmployee,Walmart
+10099,Alana Briggs,02 28 1992,03 31 2016,223 Spruce St,Fort Worth,Tarrant County,7,1,PrivateEmployee,Kroger
+10100,Colby Mercer,05 05 1988,06 12 2012,334 Ash St,Fort Worth,Tarrant County,10,0,PrivateEmployee,UPS
